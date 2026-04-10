@@ -37,40 +37,50 @@
 
         <section class="contact-layout reveal">
           <div class="container">
-            <form class="contact-form" action="#" method="post">
-              <label>
-                Name
-                <input type="text" name="name" placeholder="Your name" />
-              </label>
-              <label>
-                Email
-                <input type="email" name="email" placeholder="you@company.com" />
-              </label>
-              <label>
-                Company
-                <input type="text" name="company" placeholder="Company name" />
-              </label>
-              <label>
-                Phone
-                <input type="tel" name="phone" placeholder="+91 00000 00000" />
-              </label>
-              <label>
-                Brief Requirement
-                <textarea name="requirement" rows="6" placeholder="What challenge are you solving?"></textarea>
-              </label>
-              <button class="button button-primary" type="submit">Submit request</button>
-            </form>
+            <div class="grid-2col" style="align-items: stretch;">
+              <form class="contact-form" action="#" method="post">
+                <div class="form-field">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required />
+                </div>
+                <div class="form-field">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="john@company.com" required />
+                </div>
+                <div class="form-field">
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company" placeholder="Hospitality Group Ltd" />
+                </div>
+                <div class="form-field">
+                  <label for="requirement">Brief Requirement</label>
+                  <textarea id="requirement" name="requirement" rows="4" placeholder="What challenge are you solving?"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit" style="width: 100%;">Submit request</button>
+              </form>
 
-            <aside class="contact-aside">
-              <h2>Engagement areas</h2>
-              <ul>
-                <li>Hospitality audits and performance reviews</li>
-                <li>Franchise systems and expansion planning</li>
-                <li>Operating models and turnaround support</li>
-                <li>Research, diagnostics, and advisory retainers</li>
-              </ul>
-              <p>Email: <a href="mailto:hello@srmglobalcorp.com">hello@srmglobalcorp.com</a></p>
-            </aside>
+              <aside class="contact-aside">
+                <h2>Engagement Pathways</h2>
+                <div class="pathway-list">
+                  <div class="pathway-item">
+                    <h3>Commercial Audits</h3>
+                    <p>Comprehensive performance diagnostics for existing operations, highlighting revenue leakage and brand positioning gaps.</p>
+                  </div>
+                  <div class="pathway-item">
+                    <h3>Strategic Expansion</h3>
+                    <p>Franchise architecture and growth strategy for brands ready to scale across borders without losing operational control.</p>
+                  </div>
+                  <div class="pathway-item">
+                    <h3>Operating Systems</h3>
+                    <p>Creating custom, repeatable frameworks for hospitality excellence—from F&B standards to service cultur.</p>
+                  </div>
+                </div>
+                
+                <div style="margin-top: 48px; border-top: 1px solid var(--line); padding-top: 32px;">
+                  <p>Advisory Office: <strong>SRM Global Corp</strong></p>
+                  <p>Email: <a href="mailto:hello@srmglobalcorp.com" style="color: var(--accent); font-weight: 500;">hello@srmglobalcorp.com</a></p>
+                </div>
+              </aside>
+            </div>
           </div>
         </section>
       </main>
