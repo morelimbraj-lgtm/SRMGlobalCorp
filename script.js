@@ -5,6 +5,7 @@ import createGlobe from "cobe";
  */
 document.addEventListener("DOMContentLoaded", () => {
   const isReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.body.classList.add("is-ready");
 
   // 0. Mobile Menu Logic
   const menuToggle = document.querySelector('.menu-toggle');
@@ -129,7 +130,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 2. Scroll Reveal System
-  const revealElements = document.querySelectorAll(".framer-reveal");
+  const revealElements = document.querySelectorAll(".framer-reveal, .reveal");
+
+  revealElements.forEach((section) => {
+    const motionItems = section.querySelectorAll("[data-motion]");
+    motionItems.forEach((item, index) => {
+      item.classList.add("motion-item");
+      item.style.setProperty("--motion-index", index);
+    });
+  });
 
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
