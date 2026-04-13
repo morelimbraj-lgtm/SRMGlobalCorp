@@ -5,3 +5,7 @@ dist
 .DS_Store
 .antigravityignore
 .gemini
+.next
+dev.log
+.antigravity*
+*.log
