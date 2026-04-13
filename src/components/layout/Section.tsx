@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 interface SectionProps {
   id?: string;
-  background?: 'white' | 'subtle' | 'dark';
+  background?: 'white' | 'subtle' | 'dark' | 'accent';
   children: React.ReactNode;
   className?: string;
 }
@@ -12,6 +12,7 @@ export const Section = ({ id, background = 'white', children, className }: Secti
     white: 'bg-neutral-50',
     subtle: 'bg-neutral-100',
     dark: 'bg-primary text-neutral-50',
+    accent: 'bg-accent text-white',
   };
 
   return (

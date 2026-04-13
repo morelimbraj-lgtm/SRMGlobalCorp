@@ -16,35 +16,37 @@ export const ProblemSolution = () => {
           className="grid md:grid-cols-2 gap-16 md:gap-24 items-center"
         >
           <motion.div variants={slideLeft}>
+            <span className="text-[10px] uppercase tracking-widest text-secondary mb-4 block">The Problem</span>
             <h2 className="text-3xl mb-6 text-primary max-w-[600px]">
-              Most hospitality businesses run on instinct.
+              Instinct is not a strategy.
             </h2>
             <p className="text-secondary mb-8 max-w-[600px]">
-              Operational chaos and fragmented systems lead to stagnant revenue. Instinct is valuable, but systems are scalable.
+              Relying on "gut feeling" leads to operational leakage and stagnant revenue. Without systems, hospitality growth is hit-or-miss.
             </p>
             <div className="h-1 bg-neutral-100 w-full overflow-hidden">
-              <div className="h-full bg-neutral-200 w-1/3" />
+               <div className="h-full bg-neutral-200 w-1/3" />
             </div>
-            <span className="text-[10px] uppercase tracking-widest text-secondary mt-2 block">Current State: Linear Growth</span>
+            <span className="text-[10px] uppercase tracking-widest text-secondary mt-2 block">Status Quo: Linear Growth</span>
           </motion.div>
 
           <motion.div variants={slideRight}>
+            <span className="text-[10px] uppercase tracking-widest text-accent mb-4 block">The Solution</span>
             <h2 className="text-3xl mb-6 text-accent max-w-[600px]">
-              We build systems that make growth repeatable.
+              Precision systems for $XXXM outcomes.
             </h2>
             <p className="text-secondary mb-8 max-w-[600px]">
-              SRM Global Corp turns operational complexity into clear, high-performing frameworks that protect margins and drive expansion.
+              We install proprietary frameworks that turn operational complexity into clear, high-performing assets with predictable, compound returns.
             </p>
             <div className="h-1 bg-accent/20 w-full overflow-hidden">
                <motion.div 
                  className="h-full bg-accent w-2/3"
                  initial={{ width: 0 }}
-                 whileInView={{ width: "66%" }}
+                 whileInView={{ width: "85%" }}
                  viewport={{ once: true }}
-                 transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+                 transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
                />
             </div>
-            <span className="text-[10px] uppercase tracking-widest text-accent mt-2 block">Future State: Compound Performance</span>
+            <span className="text-[10px] uppercase tracking-widest text-accent mt-2 block">Outcome: Compound Performance</span>
           </motion.div>
         </motion.div>
       </Container>
